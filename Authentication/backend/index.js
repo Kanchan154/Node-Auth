@@ -21,10 +21,10 @@ app.use(cors({
 app.use(express.json());        // allows us to parse incoming requests: req.body
 app.use(cookieParser());        // allows to access cookies which have been created
 
-
+// setting up the auth routes
 app.use('/api/auth', authRoutes)
 
-
+// for production, setting the frontend path 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "/frontend/dist")));
 

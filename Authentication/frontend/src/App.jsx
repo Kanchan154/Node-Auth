@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 import { useAuthStore } from "./store/authStore";
 
+// Importing Components
 import Home from './pages/Home'
 import LoadingSpinner from "./components/LoadingSpinner";
 import Signup from "./pages/Signup";

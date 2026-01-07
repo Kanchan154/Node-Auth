@@ -41,6 +41,7 @@ export const sendWelcomeEmail = async (email, name) => {
     }
 }
 
+// Swnd reset password link
 export const sendPasswordResetEmail = async (email, resetUrl) => {
     const recipient = [{ email }];
     try {
@@ -57,6 +58,7 @@ export const sendPasswordResetEmail = async (email, resetUrl) => {
     }
 }
 
+// reset success email
 export const sendResetSuccessEmail = async (email) => {
     const recipient = [{ email }];
     try {

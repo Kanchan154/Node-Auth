@@ -14,4 +14,4 @@ const Input = ({ icon: Icon, ...props }) => {
     )
 }
 
-export default Input
+export default Input;

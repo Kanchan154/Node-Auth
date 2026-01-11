@@ -12,6 +12,8 @@ const ResetPassword = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const { loading, resetPassword } = useAuthStore();
   const navigate = useNavigate();
+
+  // password reset function
   const handleResetPassword = async (e) => {
     e.preventDefault();
     try {
@@ -25,8 +27,8 @@ const ResetPassword = () => {
     } catch (error) {
       
     }
-
   };
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -72,8 +74,7 @@ const ResetPassword = () => {
       </div>
 
     </motion.div>
-
   )
 }
 
-export default ResetPassword
+export default ResetPassword;

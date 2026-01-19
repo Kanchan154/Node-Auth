@@ -64,9 +64,8 @@ const Login = () => {
                     <Link to={'/signup'}><span className='font-bold text-green-400 hover:underline'>Create Account</span></Link>
                 </p>
             </div>
-
         </motion.div>
     )
 }
 
-export default Login
+export default Login;

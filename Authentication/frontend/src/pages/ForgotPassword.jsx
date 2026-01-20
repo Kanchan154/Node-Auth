@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 const ForgotPassword = () => {
-
     const [email, setEmail] = useState('');
     const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -21,6 +20,7 @@ const ForgotPassword = () => {
             toast.error(error)
         }
     }
+    
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -61,10 +61,8 @@ const ForgotPassword = () => {
             <div className='flex justify-center px-8 py-4 bg-gray-900 bg-opacity-50'>
                 <Link to={'/login'}><span className='flex gap-2 font-bold text-green-400 hover:underline'><MoveLeft />Back to Login</span></Link>
             </div>
-
         </motion.div>
-
     )
 }
 
-export default ForgotPassword
+export default ForgotPassword;
